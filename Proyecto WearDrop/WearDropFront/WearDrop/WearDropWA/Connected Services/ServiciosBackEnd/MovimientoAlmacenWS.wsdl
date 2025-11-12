@@ -11,6 +11,12 @@
   <message name="listarMovimientosPorAlmacenResponse">
     <part name="parameters" element="tns:listarMovimientosPorAlmacenResponse" />
   </message>
+  <message name="modificarMovimientoAlmacen">
+    <part name="parameters" element="tns:modificarMovimientoAlmacen" />
+  </message>
+  <message name="modificarMovimientoAlmacenResponse">
+    <part name="parameters" element="tns:modificarMovimientoAlmacenResponse" />
+  </message>
   <message name="insertarMovAlmacen">
     <part name="parameters" element="tns:insertarMovAlmacen" />
   </message>
@@ -35,16 +41,14 @@
   <message name="listarMovimientosActivosResponse">
     <part name="parameters" element="tns:listarMovimientosActivosResponse" />
   </message>
-  <message name="modificarMovimientoAlmacen">
-    <part name="parameters" element="tns:modificarMovimientoAlmacen" />
-  </message>
-  <message name="modificarMovimientoAlmacenResponse">
-    <part name="parameters" element="tns:modificarMovimientoAlmacenResponse" />
-  </message>
   <portType name="MovimientoAlmacenWS">
     <operation name="listarMovimientosPorAlmacen">
       <input wsam:Action="http://almacen.services.weardrop.pucp.edu.pe/MovimientoAlmacenWS/listarMovimientosPorAlmacenRequest" message="tns:listarMovimientosPorAlmacen" />
       <output wsam:Action="http://almacen.services.weardrop.pucp.edu.pe/MovimientoAlmacenWS/listarMovimientosPorAlmacenResponse" message="tns:listarMovimientosPorAlmacenResponse" />
+    </operation>
+    <operation name="modificarMovimientoAlmacen">
+      <input wsam:Action="http://almacen.services.weardrop.pucp.edu.pe/MovimientoAlmacenWS/modificarMovimientoAlmacenRequest" message="tns:modificarMovimientoAlmacen" />
+      <output wsam:Action="http://almacen.services.weardrop.pucp.edu.pe/MovimientoAlmacenWS/modificarMovimientoAlmacenResponse" message="tns:modificarMovimientoAlmacenResponse" />
     </operation>
     <operation name="insertarMovAlmacen">
       <input wsam:Action="http://almacen.services.weardrop.pucp.edu.pe/MovimientoAlmacenWS/insertarMovAlmacenRequest" message="tns:insertarMovAlmacen" />
@@ -62,14 +66,19 @@
       <input wsam:Action="http://almacen.services.weardrop.pucp.edu.pe/MovimientoAlmacenWS/listarMovimientosActivosRequest" message="tns:listarMovimientosActivos" />
       <output wsam:Action="http://almacen.services.weardrop.pucp.edu.pe/MovimientoAlmacenWS/listarMovimientosActivosResponse" message="tns:listarMovimientosActivosResponse" />
     </operation>
-    <operation name="modificarMovimientoAlmacen">
-      <input wsam:Action="http://almacen.services.weardrop.pucp.edu.pe/MovimientoAlmacenWS/modificarMovimientoAlmacenRequest" message="tns:modificarMovimientoAlmacen" />
-      <output wsam:Action="http://almacen.services.weardrop.pucp.edu.pe/MovimientoAlmacenWS/modificarMovimientoAlmacenResponse" message="tns:modificarMovimientoAlmacenResponse" />
-    </operation>
   </portType>
   <binding name="MovimientoAlmacenWSPortBinding" type="tns:MovimientoAlmacenWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <operation name="listarMovimientosPorAlmacen">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarMovimientoAlmacen">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -106,15 +115,6 @@
       </output>
     </operation>
     <operation name="listarMovimientosActivos">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="modificarMovimientoAlmacen">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

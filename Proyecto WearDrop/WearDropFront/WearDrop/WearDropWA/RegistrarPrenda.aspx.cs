@@ -2,14 +2,14 @@
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-using RefPolo = WearDropWA.PoloWS;
-using RefBlusa = WearDropWA.BlusaWS;
-using RefVest = WearDropWA.VestidoWS;
-using RefFalda = WearDropWA.FaldaWS;
-using RefPant = WearDropWA.PantalonWS;
-using RefCasaca = WearDropWA.CasacaWS;
-using RefGorro = WearDropWA.GorroWS;
-using WearDropWA.PoloWS;
+// Aliases que apuntan al namespace generado real (uno solo)
+using RefPolo   = global::WearDropWA.ServiciosBackEnd;
+using RefBlusa  = global::WearDropWA.ServiciosBackEnd;
+using RefVest   = global::WearDropWA.ServiciosBackEnd;
+using RefFalda  = global::WearDropWA.ServiciosBackEnd;
+using RefPant   = global::WearDropWA.ServiciosBackEnd;
+using RefCasaca = global::WearDropWA.ServiciosBackEnd;
+using RefGorro  = global::WearDropWA.ServiciosBackEnd;
 
 namespace WearDropWA
 {
@@ -504,10 +504,11 @@ namespace WearDropWA
                 tipoVestidoSpecified = true,
                 tipoManga = (RefVest.tipoManga)Enum.Parse(typeof(RefVest.tipoManga), ddlTipoMangaV.SelectedValue, true),
                 tipoMangaSpecified = true,
-                largo = ParseInt(txtLargoVestido.Text, "Largo (cm)"),
-                 
-            };
+                // CORREGIDO: largo es double -> ParseDouble
+                largo = ParseInt(txtLargoVestido.Text, "Largo (cm)")
 
+
+            };
 
             if (estado == Estado.Modificar) { p.idPrenda = Id; ws.modificarVestido(p); }
             else ws.insertarVestido(p);

@@ -79,8 +79,16 @@
     <None Include="Connected Services\ServiciosBackEnd\AlmacenWS.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\ServiciosBackEnd\BlusaWS.wsdl" />
+    <None Include="Connected Services\ServiciosBackEnd\BlusaWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\ServiciosBackEnd\CargoWS.wsdl" />
     <None Include="Connected Services\ServiciosBackEnd\CargoWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosBackEnd\CasacaWS.wsdl" />
+    <None Include="Connected Services\ServiciosBackEnd\CasacaWS.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\ServiciosBackEnd\ClienteWS.wsdl" />
@@ -95,8 +103,24 @@
     <None Include="Connected Services\ServiciosBackEnd\EmpleadoWS.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\ServiciosBackEnd\FaldaWS.wsdl" />
+    <None Include="Connected Services\ServiciosBackEnd\FaldaWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosBackEnd\GorroWS.wsdl" />
+    <None Include="Connected Services\ServiciosBackEnd\GorroWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\ServiciosBackEnd\MovimientoAlmacenWS.wsdl" />
     <None Include="Connected Services\ServiciosBackEnd\MovimientoAlmacenWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosBackEnd\PantalonWS.wsdl" />
+    <None Include="Connected Services\ServiciosBackEnd\PantalonWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosBackEnd\PoloWS.wsdl" />
+    <None Include="Connected Services\ServiciosBackEnd\PoloWS.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\ServiciosBackEnd\referenciasWearDrop.disco" />
@@ -230,9 +254,6 @@
     <None Include="Connected Services\ServiciosBackEnd\MovimientoAlmacenXLoteWS.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.almacen.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
     <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.eliminarAlmacenResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -264,9 +285,6 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.listarMovimientosActivosResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.lote.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.modificarAlmacenResponse.datasource">
@@ -304,9 +322,6 @@
     <None Include="Connected Services\ServiciosBackEnd\VentaWS.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.cargo1.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
     <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.cliente.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -427,11 +442,172 @@
     <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.venta.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <None Include="Connected Services\ServiciosBackEnd\VestidoWS.wsdl" />
+    <None Include="Connected Services\ServiciosBackEnd\VestidoWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.almacen1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.blusa.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.cargo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.casaca.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.eliminarBlusaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.eliminarCasacaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.eliminarFaldaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.eliminarGorroResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.eliminarPantalonResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.eliminarPoloResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.eliminarVestidoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.falda.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.filtrarBlusasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.filtrarCasacasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.filtrarFaldasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.filtrarGorrosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.filtrarPantalonesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.filtrarPolosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.filtrarVestidosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.gorro.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.insertarBlusaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.insertarCasacaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.insertarFaldaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.insertarGorroResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.insertarPantalonResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.insertarPoloResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.insertarVestidoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.listarBlusasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.listarCasacasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.listarFaldasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.listarGorrosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.listarPantalonesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.listarPolosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.listarVestidosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.lote1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.modificarBlusaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.modificarCasacaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.modificarFaldaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.modificarGorroResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.modificarPantalonResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.modificarPoloResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.modificarVestidoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.obtenerBlusaPorIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.obtenerCasacaPorIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.obtenerFaldaPorIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.obtenerGorroPorIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.obtenerPantalonPorIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.obtenerPoloPorIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.obtenerVestidoPorIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.pantalon.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.polo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosBackEnd\WearDropWA.ServiciosBackEnd.vestido.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.1.js" />
     <Content Include="Scripts\jquery-3.7.1.min.js" />
     <Content Include="Scripts\jquery-3.7.1.slim.js" />
     <Content Include="Scripts\jquery-3.7.1.slim.min.js" />
+    <Content Include="Scripts\Personal\Empleado.js" />
     <Content Include="SeleccionarPrendaAnnadirProducto.aspx" />
     <Content Include="SeleccionarPrendaCombo.aspx" />
     <Content Include="SeleccionarPrendaConjunto.aspx" />
